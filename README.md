@@ -1,2 +1,3 @@
 # Mahri-teacher-diploma-thesis
-Sorag-jogap web applivation 
+
+Sorag-jogap web application
