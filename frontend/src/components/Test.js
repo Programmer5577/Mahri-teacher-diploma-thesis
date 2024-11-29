@@ -68,9 +68,9 @@ function Test() {
           </div>
         ) : (
           <div className="results-container">
-            <h2>Test Results</h2>
-            <p>Correct answers: {results.correct}</p>
-            <p>Incorrect answers: {results.incorrect}</p>
+            <h2>Testiň netijesi</h2>
+            <p>Dogry jogaplar: {results.correct}</p>
+            <p>Nädogry jogaplar: {results.incorrect}</p>
           </div>
         )}
       </div>

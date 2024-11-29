@@ -31,10 +31,10 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
+      <h2>Içeri gir</h2>
       <form onSubmit={handleLogin}>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Ulanyjy ady</label>
           <input
             type="text"
             id="username"
@@ -44,7 +44,7 @@ function Login() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Açar söz</label>
           <input
             type="password"
             id="password"
@@ -54,10 +54,10 @@ function Login() {
           />
         </div>
         {error && <div className="error">{error}</div>}
-        <button type="submit">Login</button>
+        <button type="submit">Içeri gir</button>
       </form>
       <p>
-        No account? <Link to="/register">Register here</Link>
+        Hasabyňyz ýokmy? <Link to="/register">Hasap aç</Link>
       </p>
     </div>
   );

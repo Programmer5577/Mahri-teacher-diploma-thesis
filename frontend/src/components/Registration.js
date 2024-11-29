@@ -36,10 +36,10 @@ function Registration() {
 
   return (
     <div>
-      <h2>Registration</h2>
+      <h2>Hasap açmak</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username</label>
+          <label>Ulanyjy ady</label>
           <input
             type="text"
             value={username}
@@ -48,7 +48,7 @@ function Registration() {
           />
         </div>
         <div>
-          <label>Email</label>
+          <label>Elektron poçta</label>
           <input
             type="email"
             value={email}
@@ -57,7 +57,7 @@ function Registration() {
           />
         </div>
         <div>
-          <label>Password</label>
+          <label>Açar söz</label>
           <input
             type="password"
             value={password}
@@ -66,7 +66,7 @@ function Registration() {
           />
         </div>
         {error && <div className="error">{error}</div>}
-        <button type="submit">Register</button>
+        <button type="submit">Hasap aç</button>
       </form>
     </div>
   );
