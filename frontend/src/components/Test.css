@@ -1,0 +1,163 @@
+/* Container for the entire test page */
+.test-container {
+  /* display: flex; */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* SideBar positioned on the left */
+.sidebar {
+  float: left;
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main test area positioned on the right */
+.test-main {
+  float: right;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.test-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 900px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-container p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.answer-option {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.answer-option:hover {
+  background-color: #45a049;
+}
+
+.results-container {
+  text-align: center;
+}
+
+.results-container p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.results-container button {
+  padding: 10px 25px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.results-container button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the question box */
+.question {
+  width: 60%;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Question text styling */
+.question p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Option label styling */
+.question label {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+/* Style for hovered options */
+.question label:hover {
+  background-color: #e9ecef;
+}
+
+/* Radio input styling (hidden) */
+.question input[type="radio"] {
+  display: none;
+}
+
+/* Checked option style */
+.question input[type="radio"]:checked + label {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+
+/* Кнопка для выхода на страницу Login */
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed; /* Фиксируем позицию */
+  left: 20px; /* Расположить слева */
+  bottom: 20px; /* Расположить внизу */
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}

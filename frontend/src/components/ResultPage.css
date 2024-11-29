@@ -1,0 +1,23 @@
+.result-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.result-page h2 {
+  color: #4caf50;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,16 @@
+/* Основные стили приложения */
+.App {
+  text-align: center;
+}
+
+/* Глобальные стили контейнера для Sidebar и Main Content */
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

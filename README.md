@@ -6,3 +6,4 @@ Sorag-jogap web application
 Backend side:
 MongoDBCompass (для визуалбной работы)
 MongoDB [version 8.0.3 или выше] 2008R2PLus SSL
+Node js(npm package manager)
