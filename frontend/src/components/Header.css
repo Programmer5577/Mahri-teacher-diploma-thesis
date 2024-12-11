@@ -7,18 +7,17 @@
   padding: 15px 20px;
 }
 
-.header_title {
-  position: absolute;
-  left: 40%;
-  color: white;
-  font-size: 2.3vw;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-
 .user-info {
   display: flex;
   align-items: center;
+}
+
+.user-info_blocks {
+  margin-right: 10px;
+}
+
+.user-info_blocks:last-child {
+  margin-right: 0px;
 }
 
 .username {
@@ -32,6 +31,24 @@
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid white;
+}
+
+.history {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+
+.history:hover {
+  opacity: 0.8;
+}
+
+.history img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
 }
 
 .avatar img {

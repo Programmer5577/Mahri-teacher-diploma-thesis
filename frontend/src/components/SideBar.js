@@ -5,7 +5,7 @@ import "./SideBar.css";
 function SideBar({ setSelectedLanguage }) {
   return (
     <div className="sidebar">
-      <h3>Özüňize gerek diliňizi saýlaň</h3>
+      <h3>Gerek diliňizi saýlaň</h3>
       <ul>
         <li onClick={() => setSelectedLanguage("javascript")}>JavaScript</li>
         <li onClick={() => setSelectedLanguage("python")}>Python</li>

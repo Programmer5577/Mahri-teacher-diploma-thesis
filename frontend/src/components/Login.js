@@ -31,7 +31,7 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2>Içeri gir</h2>
+      <h2>Girmek</h2>
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label htmlFor="username">Ulanyjy ady</label>
@@ -54,10 +54,10 @@ function Login() {
           />
         </div>
         {error && <div className="error">{error}</div>}
-        <button type="submit">Içeri gir</button>
+        <button type="submit">Girmek</button>
       </form>
       <p>
-        Hasabyňyz ýokmy? <Link to="/register">Hasap aç</Link>
+        Hasabyňyz ýokmy? <Link to="/register">Hasaby aç</Link>
       </p>
     </div>
   );

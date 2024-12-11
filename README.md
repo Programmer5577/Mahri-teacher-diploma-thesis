@@ -1,9 +1,13 @@
-# Mahri-teacher-diploma-thesis
+# Student Testing App
 
-Sorag-jogap web application
+Это приложение для тестирования студентов по программированию. Пользователи могут проходить тесты на различные языки программирования и получать результаты.
 
-Для того чтобя работать с этим проектом нужны эти программы:
-Backend side:
-MongoDBCompass (для визуалбной работы)
-MongoDB [version 8.0.3 или выше] 2008R2PLus SSL
-Node js(npm package manager)
+## Стек технологий
+
+- React
+- JavaScript
+- CSS
+- Node.js (для бэкенда)
+
+You should downlad a programs below: 
+MongoDB Compass

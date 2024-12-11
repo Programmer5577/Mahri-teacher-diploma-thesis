@@ -1,8 +1,9 @@
-// Test.js
+// src/components/Test.js
 import React, { useState, useEffect } from "react";
 import SideBar from "./SideBar";
 import Header from "./Header";
 import questionsData from "./questions";
+import axios from "axios"; // Подключаем axios для отправки данных на сервер
 import "./Test.css";
 
 function Test() {
@@ -41,6 +42,28 @@ function Test() {
     }
   };
 
+  useEffect(() => {
+    if (isTestComplete) {
+      // Отправка результатов на сервер
+      const resultData = {
+        userId: "64b0c8b2d16f9c7a5d6c3d3f", // Замените на реальный userId
+        testName: selectedLanguage,
+        correctAnswers: results.correct,
+        incorrectAnswers: results.incorrect,
+        totalQuestions: questions.length,
+      };
+
+      axios
+        .post("http://localhost:5000/api/test/save", resultData)
+        .then((response) => {
+          console.log("Результаты успешно сохранены:", response.data);
+        })
+        .catch((error) => {
+          console.error("Ошибка сохранения результатов:", error);
+        });
+    }
+  }, [isTestComplete, results, selectedLanguage, questions.length]);
+
   return (
     <div className="test-container">
       <Header />
@@ -68,9 +91,10 @@ function Test() {
           </div>
         ) : (
           <div className="results-container">
-            <h2>Testiň netijesi</h2>
-            <p>Dogry jogaplar: {results.correct}</p>
-            <p>Nädogry jogaplar: {results.incorrect}</p>
+            <h2>Testiň jogaby:</h2>
+            <p>Dogry jogap: {results.correct}</p>
+            <p>Nädogry jogap: {results.incorrect}</p>
+            <p>Jemi: {questions.length}</p>
           </div>
         )}
       </div>
